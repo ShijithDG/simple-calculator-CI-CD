@@ -23,6 +23,7 @@ pipeline {
             steps {
                 script {
                     // Run tests using the built image
+                    sh 'git status'
                     sh 'docker run --rm simple-calculator'
                 }
             }
